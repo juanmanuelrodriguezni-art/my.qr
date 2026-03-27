@@ -1,14 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi QR</title>
-</head>
-<body style="text-align:center; font-family:Arial;">
-  <h1>Hola 👋</h1>
-  <p>Este es mi proyecto con código QR</p>
+    <meta charset="UTF-8">
+    <title>Laraquete</title>
 
-  <button onclick="alert('Funciona! 😎')">
-    Presióname
-  </button>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .menu {
+            text-align: center;
+            margin: 20px;
+        }
+
+        details {
+            margin: 15px auto;
+            width: 70%;
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        summary {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        details p {
+            background-color: white;
+            color: black;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        /* IMÁGENES ORDENADAS */
+        .imagenes {
+            background-color: white;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        
+        .imagenes img {
+    max-width: 350px;   /* más anchas */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+        .imagenes img:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Bienvenido a Laraquete</h1>
+</header>
+
+<div class="menu">
+
+    <!-- HISTORIA -->
+    <details>
+        <summary>Historia de Laraquete</summary>
+        <p>
+        Laraquete es una localidad ubicada en la Región del Biobío, en la comuna de Arauco.
+        En sus inicios, era un pequeño asentamiento dedicado principalmente a la pesca artesanal.
+        Sus habitantes también se dedicaban a la agricultura y a actividades rurales.
+        Con el paso del tiempo, fue creciendo gracias a su ubicación cercana al mar y al río.
+        El río Laraquete ha sido un elemento importante para el desarrollo de la zona.
+        Además, la llegada de caminos y transporte facilitó la conexión con otras ciudades.
+        Esto permitió el desarrollo del comercio local.
+        También comenzó a recibir visitantes por sus paisajes naturales.
+        Sus tradiciones se han mantenido a lo largo de los años.
+        Hoy en día, Laraquete combina su historia con el turismo.
+        </p>
+    </details>
+
+    <!-- TRADICIONES -->
+    <details>
+        <summary>Tradiciones de Laraquete</summary>
+        <p>
+        Laraquete es conocido por mantener vivas diversas tradiciones a lo largo del tiempo.
+        Una de las más destacadas es la preparación de tortillas de rescoldo.
+        Estas son cocinadas de manera artesanal bajo las brasas, conservando recetas antiguas.
+        También existen ferias locales donde se venden productos típicos.
+        La pesca artesanal sigue siendo una actividad importante para muchas familias.
+        En algunas celebraciones se realizan actividades comunitarias y culturales.
+        La música y el folclore forman parte de la identidad del lugar.
+        Las reuniones familiares y comunitarias son muy valoradas.
+        Además, se mantienen costumbres ligadas al mar y al río.
+        Estas tradiciones hacen de Laraquete un lugar con fuerte identidad cultural.
+        </p>
+    </details>
+
+    <!-- IMÁGENES -->
+    <details>
+        <summary>Imágenes de Laraquete</summary>
+        <div class="imagenes">
+            <img src="/Imagenes de laraquete/Costanera.img.jpeg" alt="Costanera">
+            <img src="/Imagenes de laraquete/Mar.img.jpeg" alt="Mar">
+            <img src="/Imagenes de laraquete/Playa.img.jpeg" alt="Playa">
+            <img src="/Imagenes de laraquete/Hotelaraquete.img" alt="Hotel Laraquete">
+        </div>
+    </details>
+
+</div>
+
 </body>
 </html>
